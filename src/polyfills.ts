@@ -64,3 +64,47 @@ import 'zone.js/dist/zone';  // Included with Angular CLI.
 /***************************************************************************************************
  * APPLICATION IMPORTS
  */
+
+
+/***************************************************************************************************
+ * CUSTOM ELEMENTS POLYFILLS
+ */
+
+// Needed for browsers without native `MutationObserver`.
+// (E.g.: IE9, IE10)
+import ShimmedMutationObserver from 'mutation-observer';
+(window as any).MutationObserver = ShimmedMutationObserver;
+
+// Needed for browsers without native `Object.setPrototypeOf()`.
+// (E.g.: IE9, IE10)
+(() => {
+  if (!Object.setPrototypeOf) {
+    var getDescriptor = function getDescriptor(obj, prop) {
+      var descriptor;
+      while (obj && !descriptor) {
+        descriptor = Object.getOwnPropertyDescriptor(obj, prop);
+        obj = Object.getPrototypeOf(obj);
+      }
+      return descriptor || {};
+    };
+    var setPrototypeOf = function setPrototypeOf(obj, proto) {
+      for (var prop in proto) {
+        if (!obj.hasOwnProperty(prop)) {
+          Object.defineProperty(obj, prop, getDescriptor(proto, prop));
+        }
+      }
+      return obj;
+    };
+
+    Object.defineProperty(setPrototypeOf, '$$shimmed', {value: true});
+    Object.setPrototypeOf = setPrototypeOf;
+  }
+})();
+
+// Needed on browsers with native `customElements`.
+// (E.g.: Chrome, Opera)
+import '@webcomponents/custom-elements/src/native-shim';
+
+// Needed for browsers without native `customElements`.
+// (E.g.: Edge, Firefox, IE, Safari)
+// import '@webcomponents/custom-elements/custom-elements.min';
