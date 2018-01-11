@@ -5,6 +5,6 @@
 <span [style.font-size.em]="size">
   Made with <span [style.color]="color">♥</span> by
   <ng-container *ngIf="url && url.length > 0; else noUrl">
-    <a [attr.href]="url">{{ name }}</a>
+    <a [attr.href]="url" target="_blank">{{ name }}</a>
   </ng-container>
 </span>
