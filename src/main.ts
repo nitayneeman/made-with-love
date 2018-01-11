@@ -1,12 +1,11 @@
-import { enableProdMode } from '@angular/core';
+import './polyfills';
+
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { registerAsCustomElements } from './@angular/elements';
 
-import { AppModule } from './app/app.module';
-import { environment } from './environments/environment';
+import { AppModule, customElements } from './app/app.module';
 
-if (environment.production) {
-  enableProdMode();
-}
-
-platformBrowserDynamic().bootstrapModule(AppModule)
-  .catch(err => console.log(err));
+registerAsCustomElements(customElements, () => {
+  return platformBrowserDynamic().bootstrapModule(AppModule);
+})
+  .then(() => { }, () => { });
