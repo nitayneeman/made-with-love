@@ -7,7 +7,7 @@ This is an experimental project which uses Angular Elements for demonstration pu
 **Don't** use this custom element in production!
 
 ## Dependencies
-Nothing :)
+Nothing :smirk:
 
 ## How to Install
 ### CDN
@@ -27,3 +27,9 @@ Alternatively, you can install this package using npm:
 npm install angular-made-with-love
 ````
 Then, you should load both above files out of `node-modules/angular-made-with-love/dist`.
+
+## License
+Released under the [MIT](https://github.com/nitayneeman/made-with-love/blob/master/LICENSE) License.
+
+## :heart:
+This README was written with :heart:.
