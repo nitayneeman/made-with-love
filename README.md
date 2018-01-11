@@ -42,6 +42,9 @@ Insert the following line in your `html` file:
 | `color` | String | Any valid color format (RGB, Hex, etc.) for the heart |
 | `size` | Number | A positive real number |
 
+## Demo
+Check out [this](https://made-with-love.stackblitz.io) link.
+
 ## License
 Released under the [MIT](https://github.com/nitayneeman/made-with-love/blob/master/LICENSE) License.
 
