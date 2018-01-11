@@ -11,13 +11,11 @@ Nothing :)
 
 ## How to Install
 ### CDN
-#### CSS
 Copy the following stylesheet link into your `<head>`:
 ```html
 <link rel="stylesheet" href="https://unpkg.com/angular-made-with-love/dist/made-with-love.css">
 ```
 
-#### JavaScript
 Copy the following script reference before the closing of your `<body>`:
 ```html
 <script src="https://unpkg.com/angular-made-with-love/dist/made-with-love.js"></script>
