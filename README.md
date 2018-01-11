@@ -28,6 +28,20 @@ npm install angular-made-with-love
 ````
 Then, you should load both above files out of `node-modules/angular-made-with-love/dist`.
 
+## How to Use
+Insert the following line in your `html` file:
+```
+<made-with-love name="Nitay Neeman" url="http://nitayneeman.com" size="1.5"></made-with-love>
+```
+
+### Parameters
+| Parameter | Type | Description |
+| --- | --- | --- |
+| `name` | String | Mandatory |
+| `url` | String | Optional |
+| `color` | String | Any valid color format (RGB, Hex, etc.) for the heart |
+| `size` | Number | A positive real number |
+
 ## License
 Released under the [MIT](https://github.com/nitayneeman/made-with-love/blob/master/LICENSE) License.
 
