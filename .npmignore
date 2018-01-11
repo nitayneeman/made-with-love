@@ -1,7 +1,16 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
-# compiled output
 /src
+.angular-cli.json
+.editorconfig
+.gitignore
+.npmignore
+karma.conf.js
+package-lock.json
+protractor.conf.js
+tsconfig.json
+tslint.json
+
 /tmp
 /out-tsc
 /dist/3rdpartylicenses.txt
