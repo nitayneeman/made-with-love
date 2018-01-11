@@ -13,3 +13,5 @@ gulp.task('rename', function() {
     .pipe(rename('made-with-love.css'))
     .pipe(gulp.dest('./dist'));
 });
+
+gulp.task('default', ['concat', 'rename']);

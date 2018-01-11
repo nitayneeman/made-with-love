@@ -1,6 +1,6 @@
 {
   "name": "angular-made-with-love",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "author": "Nitay Neeman",
   "description": "An experimental custom element which demonstrates usage of Angular Elements",
@@ -16,7 +16,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build && gulp"
   },
   "dependencies": {
     "@angular/animations": "^5.0.0",
