@@ -13,9 +13,7 @@ tslint.json
 
 /tmp
 /out-tsc
-/dist/3rdpartylicenses.txt
-/dist/favicon.ico
-/dist/index.html
+/dist
 
 # dependencies
 /node_modules
