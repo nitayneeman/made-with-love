@@ -9,20 +9,21 @@ This is an experimental project which uses Angular Elements for demonstration pu
 ## Dependencies
 Nothing :)
 
-## Quick start
-
-### CSS
+## How to Install
+### CDN
+#### CSS
 Copy the following stylesheet link into your `<head>`:
 ```html
 <link rel="stylesheet" href="https://unpkg.com/angular-made-with-love/dist/made-with-love.css">
 ```
 
-### JavaScript
+#### JavaScript
 Copy the following script reference before the closing of your `<body>`:
 ```html
-<scripts src="https://unpkg.com/angular-made-with-love/dist/made-with-love.js"></scripts>
+<script src="https://unpkg.com/angular-made-with-love/dist/made-with-love.js"></script>
 ```
 
+### npm
 Alternatively, you can install this package using npm:
 ```bash
 npm install angular-made-with-love
