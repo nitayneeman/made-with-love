@@ -31,5 +31,5 @@ Then, you should load both above files out of `node-modules/angular-made-with-lo
 ## License
 Released under the [MIT](https://github.com/nitayneeman/made-with-love/blob/master/LICENSE) License.
 
-## :heart:
+<br>
 This README was written with :heart:.
