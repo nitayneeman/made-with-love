@@ -1,6 +1,6 @@
 {
   "name": "angular-made-with-love",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "license": "MIT",
   "author": "Nitay Neeman",
   "description": "An experimental custom element which demonstrates usage of Angular Elements",

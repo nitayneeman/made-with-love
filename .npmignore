@@ -13,7 +13,7 @@ tslint.json
 
 /tmp
 /out-tsc
-/dist
+/build
 
 # dependencies
 /node_modules
