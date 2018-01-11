@@ -16,7 +16,6 @@ tslint.json
 /dist/3rdpartylicenses.txt
 /dist/favicon.ico
 /dist/index.html
-/dist/inline.bundle.js
 
 # dependencies
 /node_modules
