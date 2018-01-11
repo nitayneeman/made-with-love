@@ -1,14 +1,22 @@
 {
-  "name": "made-with-love",
-  "version": "0.0.0",
+  "name": "angular-made-with-love",
+  "version": "1.0.0",
   "license": "MIT",
+  "author": "Nitay Neeman",
+  "description": "An experimental custom element which demonstrates usage of Angular Elements",
+  "homepage": "https://github.com/nitayneeman/made-with-love",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nitayneeman/made-with-love.git"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod",
+    "build": "ng build --aot --prod --output-hashing=none",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "prepublish": "npm run build"
   },
   "dependencies": {
     "@angular/animations": "^5.0.0",
