@@ -1,3 +1,10 @@
-<p>
-  made-with-love works!
-</p>
+<ng-template #noUrl>
+  {{ name }}
+</ng-template>
+
+<span [style.font-size.em]="size">
+  Made with <span [style.color]="color">♥</span> by
+  <ng-container *ngIf="url && url.length > 0; else noUrl">
+    <a [attr.href]="url">{{ name }}</a>
+  </ng-container>
+</span>
