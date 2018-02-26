@@ -2,6 +2,8 @@
 
 A custom element for showing "Made With Love" message.
 
+> _For additional information, check out [this](http://nitayneeman.com/posts/building-a-custom-element-using-angular-elements/)  article._
+
 ## Disclaimer
 This is an experimental project which uses Angular Elements for demonstration purposes. 
 **Don't** use this custom element in production!
