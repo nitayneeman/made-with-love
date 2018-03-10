@@ -45,7 +45,7 @@ Insert the following line in your `html` file:
 | `size` | Number | A positive real number |
 
 ## Demo
-Check out [this](https://made-with-love.stackblitz.io) link.
+Check out [this](https://stackblitz.com/edit/made-with-love) link.
 
 ## License
 Released under the [MIT](https://github.com/nitayneeman/made-with-love/blob/master/LICENSE) License.
