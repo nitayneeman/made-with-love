@@ -23,6 +23,7 @@
     "@angular/common": "^5.2.9",
     "@angular/compiler": "^5.2.9",
     "@angular/core": "^5.2.9",
+    "@angular/elements": "github:angular/elements-builds#labs/elements",
     "@angular/forms": "^5.2.9",
     "@angular/http": "^5.2.9",
     "@angular/platform-browser": "^5.2.9",

@@ -1,7 +1,7 @@
 import './polyfills';
 
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-import { registerAsCustomElements } from './@angular/elements';
+import { registerAsCustomElements } from '@angular/elements';
 
 import { AppModule, customElements } from './app/app.module';
 
