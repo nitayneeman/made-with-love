@@ -1,5 +1,9 @@
 # [Made With Love](https://stackblitz.com/edit/made-with-love) &nbsp; [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Made%20With%20Love%20-%20an%20experimental%20custom%20element%20which%20demonstrates%20usage%20of%20Angular%20Elements&url=https://github.com/nitayneeman/made-with-love&hashtags=Angular,AngularElements,WebComponents)
 
+[![npm](https://img.shields.io/npm/v/angular-made-with-love.svg?colorB=brightgreen)](https://www.npmjs.com/package/angular-made-with-love)
+[![Package Version](https://img.shields.io/github/package-json/v/nitayneeman/made-with-love.svg)](https://github.com/nitayneeman/made-with-love)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/nitayneeman/made-with-love/blob/master/LICENSE)
+
 A custom element for showing "Made With Love" message.
 
 > _For additional information, check out [this](http://nitayneeman.com/posts/building-a-custom-element-using-angular-elements/)  article._
