@@ -4,9 +4,11 @@
 [![Package Version](https://img.shields.io/github/package-json/v/nitayneeman/made-with-love.svg)](https://github.com/nitayneeman/made-with-love)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/nitayneeman/made-with-love/blob/master/LICENSE)
 
-A [custom element](https://developers.google.com/web/fundamentals/web-components/customelements) that displays a "Made With Love" message.
+A [custom element](https://developers.google.com/web/fundamentals/web-components/customelements) that displays a "Made With Love" message:
 
-![Made With Love](https://raw.githubusercontent.com/nitayneeman/made-with-love/master/preview.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/nitayneeman/made-with-love/master/preview.png" width="400" style="text-align: center" />
+</p>
 
 ## Disclaimer
 This is an experimental project which uses Angular Elements for demonstration purposes. 
