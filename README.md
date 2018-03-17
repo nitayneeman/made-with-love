@@ -4,7 +4,8 @@
 [![Package Version](https://img.shields.io/github/package-json/v/nitayneeman/made-with-love.svg)](https://github.com/nitayneeman/made-with-love)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/nitayneeman/made-with-love/blob/master/LICENSE)
 
-A [custom element](https://developers.google.com/web/fundamentals/web-components/customelements) that displays a "Made With Love" message:
+A <a href="https://developers.google.com/web/fundamentals/web-components/customelements" target="_blank">custom element</a>
+ that displays a "Made With Love" message:
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/nitayneeman/made-with-love/master/preview.png" width="400" style="text-align: center" />
@@ -14,7 +15,7 @@ A [custom element](https://developers.google.com/web/fundamentals/web-components
 This is an experimental project which uses Angular Elements for demonstration purposes. 
 **Don't** use this custom element in production!
 
-> _For additional information, check out [this](http://nitayneeman.com/posts/building-a-custom-element-using-angular-elements/)  article._
+> _For additional information, check out <a href="http://nitayneeman.com/posts/building-a-custom-element-using-angular-elements/" target="_blank">this</a>  article._
 
 ## Dependencies
 Nothing :smirk:
@@ -53,7 +54,7 @@ Insert the following line in your `html` file:
 | `size` | Number | A positive real number |
 
 ## Demo
-Check out [this](https://stackblitz.com/edit/made-with-love) link.
+Check out <a href="https://stackblitz.com/edit/made-with-love" target="_blank">this</a> link.
 
 ## License
 Released under the [MIT](https://github.com/nitayneeman/made-with-love/blob/master/LICENSE) License.
