@@ -4,13 +4,15 @@
 [![Package Version](https://img.shields.io/github/package-json/v/nitayneeman/made-with-love.svg)](https://github.com/nitayneeman/made-with-love)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/nitayneeman/made-with-love/blob/master/LICENSE)
 
-A custom element for showing "Made With Love" message.
+A [custom element](https://developers.google.com/web/fundamentals/web-components/customelements) that displays a "Made With Love" message.
 
-> _For additional information, check out [this](http://nitayneeman.com/posts/building-a-custom-element-using-angular-elements/)  article._
+![Made With Love](https://raw.githubusercontent.com/nitayneeman/made-with-love/master/p.png)
 
 ## Disclaimer
 This is an experimental project which uses Angular Elements for demonstration purposes. 
 **Don't** use this custom element in production!
+
+> _For additional information, check out [this](http://nitayneeman.com/posts/building-a-custom-element-using-angular-elements/)  article._
 
 ## Dependencies
 Nothing :smirk:
