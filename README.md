@@ -6,7 +6,7 @@
 
 A [custom element](https://developers.google.com/web/fundamentals/web-components/customelements) that displays a "Made With Love" message.
 
-![Made With Love](https://raw.githubusercontent.com/nitayneeman/made-with-love/master/p.png)
+![Made With Love](https://raw.githubusercontent.com/nitayneeman/made-with-love/master/preview.png)
 
 ## Disclaimer
 This is an experimental project which uses Angular Elements for demonstration purposes. 
