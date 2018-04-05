@@ -31,80 +31,42 @@
 // import 'core-js/es6/array';
 // import 'core-js/es6/regexp';
 // import 'core-js/es6/map';
-// import 'core-js/es6/weak-map';
 // import 'core-js/es6/set';
 
 /** IE10 and IE11 requires the following for NgClass support on SVG elements */
 // import 'classlist.js';  // Run `npm install --save classlist.js`.
 
-/** IE10 and IE11 requires the following for the Reflect API. */
-// import 'core-js/es6/reflect';
+/** IE10 and IE11 requires the following to support `@angular/animation`. */
+// import 'web-animations-js';  // Run `npm install --save web-animations-js`.
 
+// Used for browsers with partially native support of Custom Elements
+import '@webcomponents/custom-elements/src/native-shim';
+
+// Used for browsers without a native support of Custom Elements
+import '@webcomponents/custom-elements/custom-elements.min';
 
 /** Evergreen browsers require these. **/
-// Used for reflect-metadata in JIT. If you use AOT (and only Angular decorators), you can remove.
+import 'core-js/es6/reflect';
 import 'core-js/es7/reflect';
 
 
-/**
- * Required to support Web Animations `@angular/platform-browser/animations`.
- * Needed for: All but Chrome, Firefox and Opera. http://caniuse.com/#feat=web-animation
- **/
+/** ALL Firefox browsers require the following to support `@angular/animation`. **/
 // import 'web-animations-js';  // Run `npm install --save web-animations-js`.
 
 
 
 /***************************************************************************************************
- * Zone JS is required by default for Angular itself.
+ * Zone JS is required by Angular itself.
  */
 import 'zone.js/dist/zone';  // Included with Angular CLI.
-
 
 
 /***************************************************************************************************
  * APPLICATION IMPORTS
  */
 
-
-/***************************************************************************************************
- * CUSTOM ELEMENTS POLYFILLS
+/**
+ * Date, currency, decimal and percent pipes.
+ * Needed for: All but Chrome, Firefox, Edge, IE11 and Safari 10
  */
-
-// Needed for browsers without native `MutationObserver`.
-// (E.g.: IE9, IE10)
-import ShimmedMutationObserver from 'mutation-observer';
-(window as any).MutationObserver = ShimmedMutationObserver;
-
-// Needed for browsers without native `Object.setPrototypeOf()`.
-// (E.g.: IE9, IE10)
-(() => {
-  if (!Object.setPrototypeOf) {
-    var getDescriptor = function getDescriptor(obj, prop) {
-      var descriptor;
-      while (obj && !descriptor) {
-        descriptor = Object.getOwnPropertyDescriptor(obj, prop);
-        obj = Object.getPrototypeOf(obj);
-      }
-      return descriptor || {};
-    };
-    var setPrototypeOf = function setPrototypeOf(obj, proto) {
-      for (var prop in proto) {
-        if (!obj.hasOwnProperty(prop)) {
-          Object.defineProperty(obj, prop, getDescriptor(proto, prop));
-        }
-      }
-      return obj;
-    };
-
-    Object.defineProperty(setPrototypeOf, '$$shimmed', {value: true});
-    Object.setPrototypeOf = setPrototypeOf;
-  }
-})();
-
-// Needed on browsers with native `customElements`.
-// (E.g.: Chrome, Opera)
-import '@webcomponents/custom-elements/src/native-shim';
-
-// Needed for browsers without native `customElements`.
-// (E.g.: Edge, Firefox, IE, Safari)
-// import '@webcomponents/custom-elements/custom-elements.min';
+// import 'intl';  // Run `npm install --save intl`.
