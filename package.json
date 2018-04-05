@@ -5,6 +5,7 @@
   "author": "Nitay Neeman",
   "description": "An experimental custom element which demonstrates usage of Angular Elements",
   "homepage": "https://github.com/nitayneeman/made-with-love",
+  "keywords": ["Angular", "Custom", "Element", "Web", "Component", "Ivy", "AngularElements", "CustomElements", "WebComponents"],
   "repository": {
     "type": "git",
     "url": "https://github.com/nitayneeman/made-with-love.git"
