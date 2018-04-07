@@ -5,7 +5,16 @@
   "author": "Nitay Neeman",
   "description": "An experimental custom element which demonstrates usage of Angular Elements",
   "homepage": "https://github.com/nitayneeman/made-with-love",
-  "keywords": ["Angular", "Custom", "Element", "Web", "Component", "Ivy", "AngularElements", "CustomElements", "WebComponents"],
+  "keywords": [
+    "Angular",
+    "Custom",
+    "Element",
+    "Web",
+    "Component",
+    "AngularElements",
+    "CustomElements",
+    "WebComponents"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/nitayneeman/made-with-love.git"
@@ -17,24 +26,23 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "prepublish": "npm run build && gulp"
+    "prepublishOnly": "npm run build && gulp"
   },
   "dependencies": {
     "@angular/animations": "^5.2.9",
     "@angular/common": "^5.2.9",
     "@angular/compiler": "^5.2.9",
     "@angular/core": "^5.2.9",
-    "@angular/elements": "^6.0.0-beta.8",
+    "@angular/elements": "^6.0.0-rc.3",
     "@angular/forms": "^5.2.9",
     "@angular/http": "^5.2.9",
     "@angular/platform-browser": "^5.2.9",
     "@angular/platform-browser-dynamic": "^5.2.9",
     "@angular/router": "^5.2.9",
-    "@webcomponents/custom-elements": "^1.0.9",
-    "core-js": "^2.4.1",
-    "mutation-observer": "^1.0.3",
+    "@webcomponents/custom-elements": "^1.1.0",
+    "core-js": "^2.5.4",
     "rxjs": "^5.5.7",
-    "zone.js": "^0.8.20"
+    "zone.js": "^0.8.25"
   },
   "devDependencies": {
     "@angular/cli": "1.6.3",
@@ -42,7 +50,7 @@
     "@angular/language-service": "^5.2.9",
     "@types/jasmine": "~2.5.53",
     "@types/jasminewd2": "~2.0.2",
-    "@types/node": "^6.0.102",
+    "@types/node": "^6.0.104",
     "codelyzer": "^4.2.1",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
