@@ -3,14 +3,14 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-test": {
+    "made-with-love": {
       "root": "",
       "projectType": "application",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-test",
+            "outputPath": "build",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -57,18 +57,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-test:build"
+            "browserTarget": "made-with-love:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-test:build:production"
+              "browserTarget": "made-with-love:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-test:build"
+            "browserTarget": "made-with-love:build"
           }
         },
         "test": {
@@ -112,7 +112,7 @@
         }
       }
     },
-    "angular-test-e2e": {
+    "made-with-love-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -120,7 +120,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular-test:serve"
+            "devServerTarget": "made-with-love:serve"
           }
         },
         "lint": {

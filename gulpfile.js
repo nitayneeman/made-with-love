@@ -9,7 +9,7 @@ gulp.task('concat', function() {
 });
 
 gulp.task('rename', function() {
-  return gulp.src('./build/styles.bundle.css')
+  return gulp.src('./build/styles.css')
     .pipe(rename('made-with-love.css'))
     .pipe(gulp.dest('./dist'));
 });
