@@ -8,9 +8,8 @@ describe('MadeWithLoveComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MadeWithLoveComponent ]
-    })
-    .compileComponents();
+      declarations: [MadeWithLoveComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

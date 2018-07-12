@@ -10,10 +10,7 @@ import { Component, OnInit } from '@angular/core';
   styles: []
 })
 export class MadeWithLoveComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

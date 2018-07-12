@@ -5,15 +5,9 @@ import { createCustomElement } from '@angular/elements';
 import { MadeWithLoveComponent } from './made-with-love/made-with-love.component';
 
 @NgModule({
-  imports: [
-    BrowserModule
-  ],
-  declarations: [
-    MadeWithLoveComponent
-  ],
-  entryComponents: [
-    MadeWithLoveComponent
-  ]
+  imports: [BrowserModule],
+  declarations: [MadeWithLoveComponent],
+  entryComponents: [MadeWithLoveComponent]
 })
 export class AppModule {
   constructor(private injector: Injector) {
@@ -21,5 +15,5 @@ export class AppModule {
     customElements.define('made-with-love', customElement);
   }
 
-  ngDoBootstrap() { }
+  ngDoBootstrap() {}
 }
