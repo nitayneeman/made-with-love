@@ -23,4 +23,9 @@ export class MadeWithLoveComponent implements OnInit {
       console.error(`Name attribute must be provided!`);
     }
   }
+
+  changeColor() {
+    this.color = this.color === 'red' ? 'blue' : 'red';
+  }
+
 }
