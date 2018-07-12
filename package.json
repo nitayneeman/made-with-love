@@ -10,15 +10,18 @@
   },
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build --prod --output-hashing=none",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e",
+    "start": "ng run made-with-love-workspace:serve",
+    "build": "ng run made-with-love-workspace:build",
+    "test": "ng run made-with-love-workspace:test",
+    "lint": "ng run made-with-love-workspace:lint",
     "format": "prettier --write '**/*.ts' '**/*.json'",
     "format:staged": "pretty-quick --staged",
     "precommit": "run-s format:staged lint",
-    "prepublishOnly": "npm run build && gulp"
+    "prepublishOnly": "npm run build && gulp",
+    "lib:build": "ng run made-with-love:build",
+    "lib:build:prod": "ng run made-with-love:build:production",
+    "lib:test": "ng run made-with-love:test",
+    "lib:lint": "ng run made-with-love:lint"
   },
   "dependencies": {
     "@angular/common": "6.0.9",
