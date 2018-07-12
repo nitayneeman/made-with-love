@@ -1,20 +1,9 @@
 {
-  "name": "angular-made-with-love",
-  "version": "1.1.0",
+  "name": "made-with-love-workspace",
+  "version": "0.0.0",
   "license": "MIT",
   "author": "Nitay Neeman",
-  "description": "An experimental custom element which demonstrates usage of Angular Elements",
   "homepage": "https://github.com/nitayneeman/made-with-love",
-  "keywords": [
-    "Angular",
-    "Custom",
-    "Element",
-    "Web",
-    "Component",
-    "AngularElements",
-    "CustomElements",
-    "WebComponents"
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/nitayneeman/made-with-love.git"
@@ -29,10 +18,10 @@
     "prepublishOnly": "npm run build && gulp"
   },
   "dependencies": {
-    "@angular/animations": "6.0.9",
     "@angular/common": "6.0.9",
-    "@angular/compiler": "6.0.9",
     "@angular/core": "6.0.9",
+    "@angular/compiler": "6.0.9",
+    "@angular/animations": "6.0.9",
     "@angular/forms": "6.0.9",
     "@angular/elements": "6.0.9",
     "@angular/http": "6.0.9",
@@ -45,9 +34,14 @@
     "zone.js": "^0.8.24"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^0.5.13",
-    "@angular/cli": "6.0.8",
     "@angular/compiler-cli": "6.0.9",
+    "@angular-devkit/build-ng-packagr": "~0.6.8",
+    "@angular-devkit/build-angular": "^0.5.13",
+    "ng-packagr": "^3.0.0-rc.2",
+    "tsickle": ">=0.25.5",
+    "tslib": "^1.7.1",
+    "typescript": "~2.7.2",
+    "@angular/cli": "6.0.8",
     "@angular/language-service": "6.0.9",
     "@types/jasmine": "^2.8.7",
     "@types/jasminewd2": "~2.0.3",
@@ -65,7 +59,6 @@
     "karma-jasmine-html-reporter": "^0.2.2",
     "protractor": "~5.3.0",
     "ts-node": "~5.0.1",
-    "tslint": "~5.9.1",
-    "typescript": "~2.7.2"
+    "tslint": "~5.9.1"
   }
 }
