@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
 :host {
   display: inline-block;
 
   span {
+    font-family: Lato, sans-serif;
+
     a {
       color: #000;
+      font-family: Lato, sans-serif;
       font-weight: bold;
     }
   }
