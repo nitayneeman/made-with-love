@@ -23,6 +23,7 @@
     "lib:test": "ng run made-with-love:test",
     "lib:lint": "ng run made-with-love:lint"
   },
+  "private": true,
   "dependencies": {
     "@angular/common": "6.0.9",
     "@angular/core": "6.0.9",
