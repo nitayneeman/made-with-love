@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "made-with-love": {
+    "made-with-love-workspace": {
       "root": "",
       "projectType": "application",
       "architect": {
@@ -57,18 +57,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "made-with-love:build"
+            "browserTarget": "made-with-love-workspace:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "made-with-love:build:production"
+              "browserTarget": "made-with-love-workspace:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "made-with-love:build"
+            "browserTarget": "made-with-love-workspace:build"
           }
         },
         "test": {
