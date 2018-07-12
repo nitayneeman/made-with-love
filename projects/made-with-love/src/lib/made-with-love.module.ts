@@ -8,8 +8,7 @@ import { MadeWithLoveComponent } from './made-with-love/made-with-love.component
   imports: [CommonModule],
   declarations: [MadeWithLoveComponent],
   entryComponents: [MadeWithLoveComponent],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  exports: [MadeWithLoveComponent]
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class MadeWithLoveModule {
   constructor(private injector: Injector) {
