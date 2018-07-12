@@ -6,20 +6,16 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./made-with-love.component.scss']
 })
 export class MadeWithLoveComponent implements OnInit {
-  @Input()
-  public name: string;
+  @Input() public name: string;
 
-  @Input()
-  public url: string;
+  @Input() public url: string;
 
-  @Input()
-  public color: string = 'red';
+  @Input() public color = 'red';
 
-  @Input()
-  public size: number = 1;
+  @Input() public size = 1;
 
   ngOnInit() {
-    if(!this.name || this.name.length === 0) {
+    if (!this.name || this.name.length === 0) {
       console.error(`Name attribute must be provided!`);
     }
   }
