@@ -19,10 +19,13 @@
     "type": "git",
     "url": "https://github.com/nitayneeman/made-with-love.git"
   },
+  "schematics": "./schematics/collection.json",
   "peerDependencies": {
     "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
     "@angular/core": "^6.0.0-rc.0 || ^6.0.0",
     "@angular/elements": "^6.0.0-rc.0 || ^6.0.0",
-    "@webcomponents/custom-elements": "^1.1.0"
+    "@webcomponents/custom-elements": "^1.1.0",
+    "@angular-devkit/core": "^0.6.5",
+    "@angular-devkit/schematics": "^0.6.5"
   }
 }
