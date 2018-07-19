@@ -1,16 +1,17 @@
 {
   "name": "schematics",
   "version": "0.0.0",
-  "description": "A schematics",
+  "description": "A schematics collection for Made With Love",
+  "license": "MIT",
+  "author": "Nitay Neeman",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nitayneeman/made-with-love.git"
+  },
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "test": "npm run build && jasmine **/*_spec.js"
   },
-  "keywords": [
-    "schematics"
-  ],
-  "author": "",
-  "license": "MIT",
   "schematics": "./src/collection.json",
   "dependencies": {
     "@angular-devkit/core": "^0.6.8",
