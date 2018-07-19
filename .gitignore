@@ -5,6 +5,9 @@
 /dist
 /tmp
 /out-tsc
+/projects/schematics/src/**/*.js
+/projects/schematics/src/**/*.js.map
+/projects/schematics/src/**/*.d.ts
 
 # dependencies
 /node_modules

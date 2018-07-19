@@ -8,12 +8,8 @@
     "type": "git",
     "url": "https://github.com/nitayneeman/made-with-love.git"
   },
-  "scripts": {
-    "build": "tsc -p tsconfig.json",
-    "test": "npm run build && jasmine **/*_spec.js"
-  },
   "schematics": "./src/collection.json",
-  "dependencies": {
+  "peerDependencies": {
     "@angular-devkit/core": "^0.6.8",
     "@angular-devkit/schematics": "^0.6.8",
     "@types/jasmine": "^2.6.0",
