@@ -9,6 +9,8 @@ import {
   NodeDependencyType
 } from 'schematics-utilities';
 
+import { Schema } from './schema';
+
 function addPackageJsonDependencies(): Rule {
   return (host: Tree, context: SchematicContext) => {
     const dependencies: NodeDependency[] = [
@@ -35,7 +37,7 @@ function installPackageJsonDependencies(): Rule {
   };
 }
 
-function addModuleToImports(options: any): Rule {
+function addModuleToImports(options: Schema): Rule {
   return (host: Tree, context: SchematicContext) => {
     const workspace = getWorkspace(host);
     const project = getProjectFromWorkspace(
@@ -51,7 +53,7 @@ function addModuleToImports(options: any): Rule {
   };
 }
 
-function addPolyfillToScripts(options: any) {
+function addPolyfillToScripts(options: Schema) {
   return (host: Tree, context: SchematicContext) => {
     const polyfillPath = 'node_modules/@webcomponents/custom-elements/src/native-shim.js';
     const polyfillName = 'custom-elements';
@@ -80,7 +82,7 @@ function addPolyfillToScripts(options: any) {
   };
 }
 
-export default function(options: any): Rule {
+export default function(options: Schema): Rule {
   return chain([
     options && options.skipPackageJson ? noop() : addPackageJsonDependencies(),
     options && options.skipPackageJson ? noop() : installPackageJsonDependencies(),
