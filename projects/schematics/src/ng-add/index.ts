@@ -41,12 +41,46 @@ function addModuleToImports(options: any): Rule {
     const moduleName = 'MadeWithLoveModule';
 
     addModuleImportToRootModule(host, moduleName, 'angular-made-with-love', project);
-    context.logger.log('info', `✍️ Added "${moduleName}" into the imports of "${project.name}"`);
+    context.logger.log('info', `✍ Added "${moduleName}" into the imports of "${project.name}"`);
+
+    return host;
+  };
+}
+
+function addPolyfillToScripts(options: any) {
+  return (host: Tree, context: SchematicContext) => {
+    const polyfillPath = 'node_modules/@webcomponents/custom-elements/src/native-shim.js';
+    const polyfillName = 'custom-elements';
+
+    try {
+      const angularJsonFile = host.read('angular.json');
+
+      if (angularJsonFile) {
+        const angularJsonFileObject = JSON.parse(angularJsonFile.toString('utf-8'));
+        const project = options.project;
+        const projectObject = angularJsonFileObject.projects[project];
+        const scripts = projectObject.architect.build.options.scripts;
+
+        scripts.push({
+          input: polyfillPath
+        });
+        host.overwrite('angular.json', JSON.stringify(angularJsonFileObject, null, 2));
+      }
+    } catch (e) {
+      context.logger.log('error', `🚫 Failed to add the polyfill "${polyfillName}" to scripts`);
+    }
+
+    context.logger.log('info', `✍ Added "${polyfillName}" polyfill to scripts`);
 
     return host;
   };
 }
 
 export default function(options: any): Rule {
-  return chain([addPackageJsonDependencies(), installPackageJsonDependencies(), addModuleToImports(options)]);
+  return chain([
+    addPackageJsonDependencies(),
+    installPackageJsonDependencies(),
+    addModuleToImports(options),
+    addPolyfillToScripts(options)
+  ]);
 }
