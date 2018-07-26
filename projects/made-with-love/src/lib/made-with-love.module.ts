@@ -2,7 +2,7 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA, Injector } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { createCustomElement } from '@angular/elements';
 
-import { MadeWithLoveComponent } from './made-with-love/made-with-love.component';
+import { MadeWithLoveComponent } from './made-with-love.component';
 
 @NgModule({
   imports: [CommonModule],
