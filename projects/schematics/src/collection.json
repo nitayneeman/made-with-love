@@ -2,7 +2,7 @@
   "$schema": "./node_modules/@angular-devkit/schematics/collection-schema.json",
   "schematics": {
     "ng-add": {
-      "description": "Installs and injects the MadeWithLoveModule",
+      "description": "Installs and injects the MadeWithLove library",
       "factory": "./ng-add/index"
     }
   }
