@@ -21,7 +21,7 @@ function addPackageJsonDependencies(): Rule {
 
     dependencies.forEach(dependency => {
       addPackageJsonDependency(host, dependency);
-      context.logger.log('info', `🖊️ Added "${dependency.name}" into ${dependency.type}`);
+      context.logger.log('info', `✅️ Added "${dependency.name}" into ${dependency.type}`);
     });
 
     return host;
@@ -31,7 +31,7 @@ function addPackageJsonDependencies(): Rule {
 function installPackageJsonDependencies(): Rule {
   return (host: Tree, context: SchematicContext) => {
     context.addTask(new NodePackageInstallTask());
-    context.logger.log('info', `🔍  Installing dependencies...`);
+    context.logger.log('info', `🔍 Installing packages...`);
 
     return host;
   };
@@ -47,7 +47,7 @@ function addModuleToImports(options: Schema): Rule {
     const moduleName = 'MadeWithLoveModule';
 
     addModuleImportToRootModule(host, moduleName, 'angular-made-with-love', project);
-    context.logger.log('info', `🖊️ Added "${moduleName}" into the imports of "${project.name}"`);
+    context.logger.log('info', `✅️ "${moduleName}" is imported`);
 
     return host;
   };
@@ -76,7 +76,7 @@ function addPolyfillToScripts(options: Schema) {
       context.logger.log('error', `🚫 Failed to add the polyfill "${polyfillName}" to scripts`);
     }
 
-    context.logger.log('info', `🖊️ Added "${polyfillName}" polyfill to scripts`);
+    context.logger.log('info', `✅️ Added "${polyfillName}" polyfill to scripts`);
 
     return host;
   };
