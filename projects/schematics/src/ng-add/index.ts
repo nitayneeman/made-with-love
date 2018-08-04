@@ -14,7 +14,7 @@ import { Schema } from './schema';
 function addPackageJsonDependencies(): Rule {
   return (host: Tree, context: SchematicContext) => {
     const dependencies: NodeDependency[] = [
-      { type: NodeDependencyType.Default, version: '~6.0.9', name: '@angular/elements' },
+      { type: NodeDependencyType.Default, version: '~6.1.1', name: '@angular/elements' },
       { type: NodeDependencyType.Default, version: '~1.1.0', name: '@webcomponents/custom-elements' },
       { type: NodeDependencyType.Default, version: '~1.1.0', name: 'angular-made-with-love' }
     ];
