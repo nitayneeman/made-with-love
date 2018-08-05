@@ -42,6 +42,7 @@ function addModuleToImports(options: Schema): Rule {
     const workspace = getWorkspace(host);
     const project = getProjectFromWorkspace(
       workspace,
+      // Takes the first project in case it's not provided by CLI
       options.project ? options.project : Object.keys(workspace['projects'])[0]
     );
     const moduleName = 'MadeWithLoveModule';
