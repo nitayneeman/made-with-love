@@ -56,8 +56,8 @@ function addModuleToImports(options: Schema): Rule {
 
 function addPolyfillToScripts(options: Schema) {
   return (host: Tree, context: SchematicContext) => {
-    const polyfillPath = 'node_modules/@webcomponents/custom-elements/src/native-shim.js';
     const polyfillName = 'custom-elements';
+    const polyfillPath = 'node_modules/@webcomponents/custom-elements/src/native-shim.js';
 
     try {
       const angularJsonFile = host.read('angular.json');
