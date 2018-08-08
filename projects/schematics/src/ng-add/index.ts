@@ -87,7 +87,7 @@ export default function(options: Schema): Rule {
   return chain([
     options && options.skipPackageJson ? noop() : addPackageJsonDependencies(),
     options && options.skipPackageJson ? noop() : installPackageJsonDependencies(),
-    addModuleToImports(options),
+    options && options.skipModuleImport ? noop() : addModuleToImports(options),
     options && options.skipPolyfill ? noop() : addPolyfillToScripts(options)
   ]);
 }

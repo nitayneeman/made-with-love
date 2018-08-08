@@ -10,6 +10,11 @@ export interface Schema {
   skipPolyfill?: boolean;
 
   /**
+   * Skip importing the module into the root module of the host application
+   */
+  skipModuleImport?: boolean;
+
+  /**
    * The project that needs the polyfill scripts
    */
   project?: string;
