@@ -22,7 +22,7 @@
     "lib:test": "ng run made-with-love:test",
     "lib:lint": "ng run made-with-love:lint",
     "schematics:build": "tsc -p projects/schematics/tsconfig.json",
-    "schematics:deploy": "npm run schematics:build && webpack"
+    "schematics:copy": "npm run schematics:build && webpack"
   },
   "private": true,
   "dependencies": {
