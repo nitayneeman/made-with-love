@@ -7,7 +7,6 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist/made-with-love/schematics/ng-add'),
     filename: 'index.js',
-    // library: 'made-with-love-schematics',
     libraryTarget: 'commonjs2'
   },
   mode: 'production',
