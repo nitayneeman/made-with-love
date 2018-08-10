@@ -18,7 +18,7 @@
     "format:staged": "pretty-quick --staged",
     "precommit": "run-s format:staged lint",
     "schematics:build": "tsc -p projects/schematics/tsconfig.json",
-    "schematics:deploy": "npm run schematics:build && copyfiles -u 3 \"projects/schematics/src/**/*.{json,js}\" dist/made-with-love/schematics",
+    "schematics:deploy": "npm run schematics:build && webpack",
     "lib:build": "ng run made-with-love:build",
     "lib:build:prod": "ng run made-with-love:build:production",
     "lib:test": "ng run made-with-love:test",
@@ -53,6 +53,7 @@
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
     "codelyzer": "~4.2.1",
+    "copy-webpack-plugin": "^4.5.2",
     "copyfiles": "^2.0.0",
     "husky": "^0.14.3",
     "jasmine-core": "~2.99.1",
@@ -72,6 +73,8 @@
     "tsickle": "^0.32.1",
     "tslib": "^1.7.1",
     "tslint": "~5.9.1",
-    "typescript": "~2.9.2"
+    "typescript": "~2.9.2",
+    "webpack": "^4.16.5",
+    "webpack-node-externals": "^1.7.2"
   }
 }
