@@ -10,19 +10,19 @@
   },
   "scripts": {
     "ng": "ng",
-    "start": "ng run made-with-love-workspace:serve",
-    "build": "ng run made-with-love-workspace:build",
-    "test": "ng run made-with-love-workspace:test",
-    "lint": "ng run made-with-love-workspace:lint",
+    "start": "ng serve",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
     "format": "prettier --write '**/*.ts' '**/*.json'",
     "format:staged": "pretty-quick --staged",
     "precommit": "run-s format:staged lint",
-    "schematics:build": "tsc -p projects/schematics/tsconfig.json",
-    "schematics:deploy": "npm run schematics:build && webpack",
     "lib:build": "ng run made-with-love:build",
     "lib:build:prod": "ng run made-with-love:build:production",
     "lib:test": "ng run made-with-love:test",
-    "lib:lint": "ng run made-with-love:lint"
+    "lib:lint": "ng run made-with-love:lint",
+    "schematics:build": "tsc -p projects/schematics/tsconfig.json",
+    "schematics:deploy": "npm run schematics:build && webpack"
   },
   "private": true,
   "dependencies": {
