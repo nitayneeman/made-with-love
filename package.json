@@ -17,6 +17,7 @@
     "format": "prettier --write '**/*.ts' '**/*.json'",
     "format:staged": "pretty-quick --staged",
     "precommit": "run-s format:staged lint",
+    "prepublish": "npm run lib:build:prod && npm run schematics:copy",
     "lib:build": "ng run made-with-love:build",
     "lib:build:prod": "ng run made-with-love:build:production",
     "lib:test": "ng run made-with-love:test",
