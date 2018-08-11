@@ -24,18 +24,18 @@ Nothing :smirk:
 ### CDN
 Copy the following stylesheet link into your `<head>`:
 ```html
-<link rel="stylesheet" href="https://unpkg.com/angular-made-with-love/dist/made-with-love.css">
+<link rel="stylesheet" href="https://unpkg.com/angular-made-with-love@1.1.0/dist/made-with-love.css">
 ```
 
 Copy the following script reference before the closing of your `<body>`:
 ```html
-<script src="https://unpkg.com/angular-made-with-love/dist/made-with-love.js"></script>
+<script src="https://unpkg.com/angular-made-with-love@1.1.0/dist/made-with-love.js"></script>
 ```
 
 ### npm
 Alternatively, you can install this package using npm:
 ```bash
-npm install angular-made-with-love
+npm install angular-made-with-love@1.1.0
 ````
 Then, you should load both above files out of `node-modules/angular-made-with-love/dist`.
 
