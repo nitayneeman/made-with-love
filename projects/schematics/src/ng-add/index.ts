@@ -16,7 +16,7 @@ function addPackageJsonDependencies(): Rule {
     const dependencies: NodeDependency[] = [
       { type: NodeDependencyType.Default, version: '~6.1.1', name: '@angular/elements' },
       { type: NodeDependencyType.Default, version: '~1.1.0', name: '@webcomponents/custom-elements' },
-      { type: NodeDependencyType.Default, version: '~1.1.0', name: 'angular-made-with-love' }
+      { type: NodeDependencyType.Default, version: '^2.0.0', name: 'angular-made-with-love' }
     ];
 
     dependencies.forEach(dependency => {
