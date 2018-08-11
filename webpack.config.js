@@ -23,6 +23,11 @@ module.exports = {
           from: 'projects/schematics/src/collection.json',
           to: '../collection.json',
           toType: 'file'
+        },
+        {
+          from: 'README.md',
+          to: '../../README.md',
+          toType: 'file'
         }
       ],
       {}
