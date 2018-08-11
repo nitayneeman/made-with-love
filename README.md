@@ -25,7 +25,7 @@ ng add angular-made-with-love
 This command will:
 
 - Add `@angular/elements`, `@webcomponents/custom-elements` and `angular-made-with-love` into `package.json`.
-- Install run `npm install`.
+- Run `npm install`.
 - Import `MadeWithLoveModule` into the root module of your host application.
 - Inject the polyfill’s script file into the `scripts` of your host application.
 
