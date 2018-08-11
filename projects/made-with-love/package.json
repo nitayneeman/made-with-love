@@ -3,17 +3,22 @@
   "version": "2.0.0",
   "license": "MIT",
   "author": "Nitay Neeman",
-  "description": "An experimental custom element which demonstrates usage of Angular Elements",
+  "description": "🚀 An experimental project which demonstrates an Angular Package which contains Angular Elements and Schematics",
   "homepage": "https://github.com/nitayneeman/made-with-love",
   "keywords": [
     "Angular",
+    "Package",
+    "Workspace",
+    "Library",
     "Custom",
     "Element",
     "Web",
     "Component",
     "AngularElements",
     "CustomElements",
-    "WebComponents"
+    "WebComponents",
+    "Schematic",
+    "Schematics"
   ],
   "repository": {
     "type": "git",
