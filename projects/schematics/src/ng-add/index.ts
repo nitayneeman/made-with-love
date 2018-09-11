@@ -66,7 +66,8 @@ function addPolyfillToScripts(options: Schema) {
         const angularJsonFileObject = JSON.parse(angularJsonFile.toString('utf-8'));
         const project = options.project ? options.project : Object.keys(angularJsonFileObject['projects'])[0];
         const projectObject = angularJsonFileObject.projects[project];
-        const scripts = projectObject.architect.build.options.scripts;
+        const targets = projectObject.targets ? projectObject.architect : projectObject.architect;
+        const scripts = targets.build.options.scripts;
 
         scripts.push({
           input: polyfillPath
