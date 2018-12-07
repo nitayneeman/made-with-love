@@ -13,7 +13,7 @@ module.exports = {
   target: 'node',
   externals: [
     nodeExternals({
-      whitelist: ['schematics-utilities']
+      whitelist: ['schematics-utilities', 'npm-registry-client']
     })
   ],
   plugins: [
