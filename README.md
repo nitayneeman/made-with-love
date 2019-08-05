@@ -11,6 +11,12 @@
   <a href="https://github.com/nitayneeman/made-with-love/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-lightgray.svg" alt="License"></a>
 </p>
 
+<p align="center">
+  <a href="https://github.com/nitayneeman/made-with-love#-how-to-install">Installation</a> ·
+  <a href="https://github.com/nitayneeman/made-with-love#-how-to-use">Usage</a> ·
+  <a href="https://github.com/nitayneeman/made-with-love#%EF%B8%8F%EF%B8%8F-disclaimer">Disclaimer</a>
+</p>
+
 ## ℹ️️ Description
 
 A project that demonstrates how to build an Angular Package which provides a simple Angular Element. Also, it demonstrates how to make it addable with `ng add` using Schematics.
